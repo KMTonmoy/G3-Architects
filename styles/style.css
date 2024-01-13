@@ -102,7 +102,9 @@ section {
   align-items: center;
   gap: 60px;
 }
-
+.quick-list {
+  padding: 20px;
+}
 .quick-list h1 {
   color: #727272;
   font-size: 45px;
@@ -125,6 +127,51 @@ section {
   line-height: 26px;
   margin: 30px 0;
 }
+
+.section-info {
+  width: 542px;
+  margin-bottom: 100px;
+}
+
+.facts-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.facts-disc {
+  margin-top: 0;
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.card-stats {
+  margin: 10px 0;
+  color: #424242;
+  font-size: 40px;
+  font-weight: 600;
+}
+.card-name {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 560px) {
   main {
     padding: 0px;
@@ -134,7 +181,7 @@ section {
     justify-content: center;
   }
   header {
-    padding: 10px;
+    padding: 10px 0px !important;
   }
   nav {
     flex-direction: column;
@@ -144,13 +191,13 @@ section {
     margin-right: 20px;
     color: #424242;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 26px;
   }
 
   nav > ul {
-    margin-top: 20px;
+    margin: 20px auto;
   }
 
   .banner-info h1 {
@@ -166,31 +213,31 @@ section {
   }
 
   .grid-Imgs img {
-    width: 150px;
+    width: 130px;
     height: auto;
     flex-shrink: 0;
   }
 
   .teams-container {
     flex-direction: column;
-    padding: 10px;
+    padding: 0;
     align-items: center;
     margin: auto;
   }
 
   .quick-list h1 {
     color: #727272;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 500;
   }
   .quick-list h1 > span {
     color: #ff900e;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
   }
   .quick-list h1 > small {
     color: #131313;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
   }
   .quick-list p {
@@ -198,7 +245,20 @@ section {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    margin: 30px 0;
+    margin: 30px 0px;
+  }
+  .card-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-info{
+    width: 100%;
+    padding:0 20px;
+    margin-bottom: 40px;
+  }
+  .card{
+    width: 80%;
+    margin-bottom: 30px;
   }
 }
 
